@@ -42,238 +42,43 @@
                         
                         <script>setTimeout(()=>{const e=location.hash.replace("#id=","");let t,a=!1;const n=t=>{for(let n of t){let t;if((t=e.length>6?n.getAttribute("data-id"):n.getAttribute("data-idx"))==e){n.scrollIntoView({behavior:"smooth",block:"start",inline:"nearest"}),a=!0;break}}};e&&(0==(t=document.getElementsByClassName("sr-unread-card")).length&&(t=document.getElementsByTagName("sr-annote")),n(t),a||n(t=document.getElementsByClassName("sr-annote")))},500);</script>
                         <script>document.addEventListener("DOMContentLoaded",function(){if("localhost"==location.hostname){const t=document.getElementsByTagName("img");for(let o of t){const t=o.src;t.startsWith("http")&&(o.src=location.origin+"/proxy?url="+t)}}},!1);</script>
-                        <title>简悦 | 简悦-SimpRead Unread Sync -Obsidian</title>
+                        <title>简悦 | 中华人民共和国环境保护法（中华人民共和国环境保护法）_百度百科</title>
                     </head>
                     <body>
                         <sr-read style='background-color: rgb(255, 255, 255);'>
-                            <sr-rd-title>简悦-SimpRead Unread Sync -Obsidian</sr-rd-title>
-                    <sr-rd-desc style="margin: 0;padding-top: 0;padding-bottom: 0;font-style: normal;font-size: 18px;">这是来自 简悦社区 用户 1wingedangel 的基于 Obsidan + SimpRead Unreader Sync 的工作流分享，非常适合 Obsidian 与简悦深度用户使用。</sr-rd-desc>
-                    <sr-rd-content><p></p><sr-blockquote>
-<p dir="auto">这是来自 <a href="https://t.me/simpread" rel="nofollow">简悦社区</a> 用户 <a href="https://github.com/1wingedangel">1wingedangel</a> 的基于 Obsidan + <a href="https://github.com/Kenshin/simpread/discussions/2889" data-hovercard-type="discussion" data-hovercard-url="/Kenshin/simpread/discussions/2889/hovercard">SimpRead Unreader Sync</a> 的工作流分享，非常适合 Obsidian 与简悦深度用户使用。</p>
-</sr-blockquote><p></p><h2 dir="auto" id="sr-toc-0">最终成形图</h2><p></p><p dir="auto">使用 Obsidian Plugin：SimpRead Sync · Templater · QuickAdd · Obsidian42 - Text Transporter · Tasks · Banners</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/81074/171083910-3bcb010f-f00e-4500-a65d-69f8e54043c9.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/81074/171083910-3bcb010f-f00e-4500-a65d-69f8e54043c9.png" style="width: auto;"></div></a></p><p></p><h2 dir="auto" id="sr-toc-1">忏悔</h2><p></p><p dir="auto">首先，我要先向上帝忏悔。因为我没能忍受住恶魔的呢喃以及能够尝试新插件的诱惑，等我醒悟过来已经 Too Late，在一天一天被催更的压力之下，才有了今天这篇文章。什么 <code>我会让这篇教程和 ob sync 插件一起发布。</code> 你个恶魔。</p><p></p><h2 dir="auto" id="sr-toc-2"><sr-annote data-id="1654329172731" data-color-type="5" sr-annote-bg-color="true">工作流程</sr-annote></h2><p></p><p dir="auto">由于篇幅可能会比较长，我先简单介绍一下我准备分享的工作流程：</p><p></p><ul dir="auto">
-<li>收集文章的统一入口我选择使用 <a href="https://app.raindrop.io/" rel="nofollow">Raindrop.io</a> 。选择 Raindrop 的原因是跨平台、分类方便、免费无限制。一般文章默认保存在 <code>未分类</code> 。然后就不管了。</li>
-<li>阅读时间开始，从 Raindrop 打开文章。大致看一下文章的标题与开头内容，判断是否值得阅读。标题党、开头提不起兴趣的直接关闭，有兴趣的通过快捷键或者右键菜单把当前页面加入稍后读。</li>
-<li>重载页面让简悦更新该页面的稍后读信息，然后进入阅读模式。开始第一遍的快速阅读，判断是否需要收藏。如果有值得收藏的亮点，通过 Live Editor 清除多余的内容 （什么 <code>下载XX派客户端，关注XX派公众号，解锁全新阅读体验 📰</code>之类）。</li>
-<li>修改稍后读的元数据。主要是修整稍后读的标题（去除多余的因素，如标题末尾可能会出现的 <code>- 网站名称</code>）以及备注和标签。我一般会把文章标题进行简化后填写在备注里。比如这篇文章：<a href="https://sspai.com/post/72987" rel="nofollow">用「乐高」思维做成的产品是什么样的？Notion 和他的 GTM 策略</a>，我可能就会简化标题并在备注里写： <code>Notion 和他的 GTM 策略</code>。因为前面那句话只是为了吸引读者来阅读，对于收藏没有太大意义还占篇幅。快速阅读完毕之后通过简悦同步助手导出离线 HTML 文件到本地。关闭页面，回到 Raindrop 把文章拖动到左侧边栏的分类中，进入下一篇文章继续。</li>
-<li><strong>接下来的阅读就不需要网络了</strong>。精读时间开始，打开简悦稍后读。此时稍后读的阅读模式会加载本地的离线 HTML 文件，开始精读并且对感兴趣的段落进行标注。根据不同的需要给标注添加备注文本，具体下面再说。如果文章实在精辟值得全文收藏，直接<code>复制 Markdown 到剪贴板</code>。修改稍后读元数据里的 <code>描述</code> ，一般写上这篇文章对自己的第一印象如何，有什么收藏意义。</li>
-<li>把标注通过 Simpread Sync 插件导入 Obsidian 。有全文收藏的需要的话创建二级标题 <code>Article</code> ，再直接粘贴 Markdown 的内容。</li>
-<li>进行标注拆解和编写永久笔记。通过 Obsidian 的各种神奇的插件把标注或者文章内容通过引用块的方式编进自己的永久笔记（MOC）里。我个人习惯把 Heading 作为原子笔记单位，每个 Markdown 文档其实都是 MOC。到这一步，知识才算是放进了自己的笔记系统里。</li>
-</ul><p></p><h2 dir="auto" id="sr-toc-3">解释说明</h2><p></p><h3 dir="auto" id="sr-toc-4">为什么不用简悦的 API，而是用 Raindrop</h3><p></p><p dir="auto"><strong>因为我收藏的文章比较乱</strong>。简悦毕竟是国内用户比较多，适配的网站还是国内网站为主。国外的文章简悦的适配没有那么完美，所以需要 Live Editor 进行一定程度的修剪和编辑。然后 Raindrop 的分类操作非常直观方便，只需要拖动到侧边栏的相应分类就可以了，既不是输入关键词补全也不是从一个下拉选单里找。</p><p></p><h3 dir="auto" id="sr-toc-5">为什么不在阅读模式下添加标注</h3><p></p><p dir="auto"><strong>因为网页页面阅读模式无法加载本地 HTML 文件</strong>。由于标注是根据文本内容以及其上下文来判断它在文章内的具体位置，所以如果 Live Editor 编辑过的本地 HTML 文件与原始网页差异过大，就会出现标注位置错乱的问题。所以我选择干脆<strong>在稍后读里深度阅读本地加载的 HTML 文件然后添加标注</strong>，尽量避免在阅读模式中进行。代价就是无法使用任何阅读模式下的插件，不过由于后述的 Obsidian 新版插件，这个就不再是一个问题了。</p><p></p><h3 dir="auto" id="sr-toc-6">为什么需要快速阅读</h3><p></p><p dir="auto">快速阅读是为了保存离线 HTML 文件，说快速阅读只是显得自己很厉害 （喂）其实现实情况是大致扫一下文章是否值得精读以及进行 Live Editor 编辑修整文章而已。</p><p></p><h2 dir="auto" id="sr-toc-7">Obsidian 插件的使用</h2><p></p><p dir="auto">原本的 Obsidian 的 Simpread sync 插件 仅仅用来同步稍后读信息和标注内容的。后来简悦开发者开发出了简悦的导入到 Obsidian 的插件，支持了 Local REST API、新生的 Markdown 模板引擎，让我这个需要频繁使用 Live Editor 修整文章的本地文件用户感到无比空虚。于是我把一堆 Obsidian 联动 Zotero 的神奇玩法插件像霰弹枪般丢给了简悦作者之后，这恶魔还真的给我更新了 simpread Sync 插件，<strong>可直接通过 Obsidian Command 选择并导入稍后读信息和稍后读的功能，并且支持新生的 Markdown 模板引擎</strong>。</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810610-f25e5ffa-6267-4524-a7c0-59a8b2713434.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810610-f25e5ffa-6267-4524-a7c0-59a8b2713434.png" style="width: auto;"></div></a></p><p></p><p dir="auto">（暴露了我之前都没好好写描述）</p><p></p><p dir="auto">具体的使用方法请参考官方文档（如果有的话。没有的话催更）。我这边就把我个人的部分关键配置分享一下。</p><p></p><h3 dir="auto" id="sr-toc-8">可能要用到的 Obsidian 插件</h3><p></p><p dir="auto">先说核心插件：</p><p></p><ul dir="auto">
-<li>日记插件</li>
-<li>模板插件</li>
-<li>页面预览插件</li>
-</ul><p></p><p dir="auto">第三方插件：</p><p></p><ul dir="auto">
-<li>SimpRead Sync （通过 BRAT 安装）</li>
-<li>Calendar</li>
-<li>Dataview</li>
-<li>Templater</li>
-<li>QuickAdd</li>
-<li>Obsidian42 - Text Transporter</li>
-<li>Tasks</li>
-<li>Banners</li>
-</ul><p></p><h3 dir="auto" id="sr-toc-9">文件命名方式</h3><p></p><p dir="auto">由于我选择通过稍后读的备注写了文章的简化后标题，所以我导入稍后读和标注到 Obsidian 的文件的命名方式是 <code>SR{{id}}@{{note}}</code> 。不使用 <code>{{mode}}</code> 是因为我选择把标注和全文一起放在一个 markdown 文档内，而不是分开来保存。</p><p></p><h3 dir="auto" id="sr-toc-10">稍后读元数据模板</h3><p></p><p dir="auto">Simpread Sync 插件的模板分两部分： <code>Unread Markdown Template</code> 和 <code>Annotation Markdown Template</code>。虽然不知道作者这样命名的意图，我理解为一个是稍后读元数据的相关模板，另一个是标注的相关模板。由于新生 Markdown 模板引擎的高度扩展性，最后我的稍后读元数据模板是这样的：</p><p></p><div><pre>---
-title: "{{title}}"
-alias: 
-&lt;% if ( unread.note &amp;&amp; unread.title != unread.note ) { %&gt;  - "{{note}}"
-&lt;% } %&gt;  - "{{title}}"
-created-date: &lt;%% tp.date.now("YYYY-MM-DDTHH:mm:ss.SSSZZ") %&gt;
-type: Simpread
-&lt;% if (unread.img) { %&gt;banner: "&lt;%- unread.img %&gt; "
-banner_icon: 🔖
-&lt;% } -%&gt;
-tag: {{ |tag| | }}
----
+                            <sr-rd-title>中华人民共和国环境保护法（中华人民共和国环境保护法）_百度百科</sr-rd-title>
+                    <sr-rd-desc style="margin: 0;padding-top: 0;padding-bottom: 0;font-style: normal;font-size: 18px;">《中华人民共和国环境保护法》已由中华人民共和国第十二届全国人民代表大会常务委员会第八次会议于 2014 年 4 月 24 日修订通过，现将修订后的《中华人民共和国环境保护法》公布，自 2015 年 1 月 1 日起施行。</sr-rd-desc>
+                    <sr-rd-content><p></p><dl>
+<dd data-pid="0">
+<span>
 
-# {{title}}
+<h2 id="sr-toc-0">（中华人民共和国环境保护法）</h2>
+</span>
+播报
+编辑
+<a nslog-type="10003105" target="_blank" href="https://baike.baidu.com/view/10812319.htm" title="锁定"><em></em>锁定</a>
 
-&gt; [!example]- Links  
-&gt; [🧷内部链接](&lt;{{int_uri}}&gt;) [🌐外部链接](&lt;{{ext_uri}}&gt;) 
+上传视频
 
-%%
-&gt; [!example]+ **Comments**  
-&gt; ```dataview
-&gt; TABLE 
-&gt;     WITHOUT ID
-&gt;     link(Source, dateformat(date(Source), "yyyy-MM-dd")) as Date___, 
-&gt;     regexreplace(rows.Comments,"^@@\[\[.+?\]\]\s","") as "Comments"
-&gt; FROM "journals"
-&gt; WHERE  contains(cmnt, this.file.name)
-&gt; FLATTEN cmnt as Comments
-&gt; WHERE contains(Comments, this.file.name)
-&gt; GROUP BY file.link as Source
-&gt; SORT rows.file.day desc
-&gt; ```
-&gt;  **Description**:: {{desc}}
-%%
-
-&gt; [!md] Metadata  
-&gt; **标题**:: [{{title}}]({{url}})  
-&gt; **日期**:: [[{{create|yyyy-mm-dd}}]]  
-&lt;% if ( unread.annotations.length &gt; 0 ) { %&gt;
-## Annotations
-
-{{annotations}}
-&lt;% } -%&gt;
-&lt;% if ( unread.tags.includes('Highlights') ) { %&gt;
-![[&lt;%% tp.file.title %&gt;_mentions#Highlight Mentions]]
-&lt;% } -%&gt;
-&lt;% if ( unread.refs ) { %&gt;
-## Reference   
-{{-|refs}}  
-&lt;% } %&gt;</pre></div><p></p><p dir="auto">需要注意的是，根据严格 的 Markdown 格式要求，<strong>callouts 中的每一行文字末尾都需要两个空格</strong>。除非你关闭了 Obsidian 的 <code>严格换行</code> 开关。</p><p></p><p dir="auto">效果是这样的：</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810651-8d7da912-d61b-42a8-bcd9-988f2dabf63f.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810651-8d7da912-d61b-42a8-bcd9-988f2dabf63f.png" style="width: auto;"></div></a></p><p></p><h3 dir="auto" id="sr-toc-11">简悦 Markdown 官方模板库</h3><p></p><p dir="auto">这些模板也可以应用于简悦的 <a href="https://github.com/Kenshin/simpread/discussions/3725" data-hovercard-type="discussion" data-hovercard-url="/Kenshin/simpread/discussions/3725/hovercard">Markdown 模板增强插件</a>，我也将此模板放到了 <a href="https://github.com/Kenshin/simpread/discussions/2153#discussioncomment-2839811" data-hovercard-type="discussion" data-hovercard-url="/Kenshin/simpread/discussions/2153/hovercard?comment_id=2839811">简悦 Markdown 官方模板库</a>。</p><p></p><p dir="auto">更多模板可以 <a href="https://github.com/Kenshin/simpread/discussions/2153" data-hovercard-type="discussion" data-hovercard-url="/Kenshin/simpread/discussions/2153/hovercard">看这里</a>。</p><p></p><h4 dir="auto" id="sr-toc-12">alias 的设置</h4><p></p><p dir="auto">由于稍后读备注中简化标题的存在，所以该文献笔记的 <code>alias</code> 包含了完整标题和简化标题两种形式。如果没有简化标题或简化标题完全等于完整标题的时候不显示简化标题。</p><p></p><h4 dir="auto" id="sr-toc-13">banners 的设置</h4><p></p><p dir="auto">简悦导出的稍后读其实是有题图的。我们可以通过 <code>unread.img</code> 放在 Frontmatter 的 <code>banner</code> 里显示这个题图。可以通过鼠标拖动题图来调整显示的区域。icon 能选择 twemoji 里的绘文字，具体参考一下 Banners 插件的帮助文档。</p><p></p><p dir="auto">如果不喜欢用网络上的图片做题图，你也可以用 quicker 来自动下载后替换。这个我就不展开了。</p><p></p><h4 dir="auto" id="sr-toc-14">这个 Comments 什么鬼</h4><p></p><p dir="auto">灵感抄自 Obsidian 的 Discord 频道中有人分享的 <strong>在 Markdown 文档中通过 dataview 的形式显示所有日记中提及该文档的文本段落</strong>。原本只是显示提及该文档的文本，然后被我魔改成 <strong>通过 quickadd 快速在今日日记添加针对该文档的评论，并且可在文档内显示所有评论，按日期分组</strong>。</p><p></p><p dir="auto">首先，在 vault 里创建一个 md 文档，<strong>保存在模板文件夹里</strong>：</p><p></p><div><pre>```js quickadd
-const activeFile = this.app.workspace.getActiveFile();
-    if (!activeFile) {
-        new Notice("No active file", 5000);
-        return;
-    }
-//console.log("active file=", activeFile);
-return activeFile.basename;
-```</pre></div><p></p><p dir="auto"><sr-annote sr-annote-bg-color="true" data-id="1653986067691" data-type="paragraph" data-color-type="1">然后在 quickadd 的设置界面里添加一个新的 template 命令：</sr-annote></p><p></p><ul dir="auto">
-<li><sr-annote sr-annote-bg-color="true" data-id="1653986067691" data-type="paragraph" data-color-type="1">Capture to：</sr-annote><code><sr-annote sr-annote-bg-color="true" data-id="1653986067691" data-type="paragraph" data-color-type="1">你的日记文件夹/{{DATE:YYYY-MM-DD}}</sr-annote></code></li>
-<li><sr-annote sr-annote-bg-color="true" data-id="1653986067691" data-type="paragraph" data-color-type="1">Insert After：填上你用来放 log 的 Section</sr-annote></li>
-<li><sr-annote sr-annote-bg-color="true" data-id="1653986067691" data-type="paragraph" data-color-type="1">勾上 </sr-annote><code><sr-annote sr-annote-bg-color="true" data-id="1653986067691" data-type="paragraph" data-color-type="1">Insert at end of section</sr-annote></code></li>
-<li><sr-annote sr-annote-bg-color="true" data-id="1653986067691" data-type="paragraph" data-color-type="1">Capture Format 见下：</sr-annote></li>
-</ul><p></p><div><pre><sr-annote sr-annote-bg-color="true" data-id="1653987022019" data-type="paragraph" data-color-type="1">- {{DATE:HH:mm}} 更新文档：{{LINKCURRENT}}
-  - cmnt:: @@[[{{TEMPLATE:刚才创建的md文档路径}}|✒️]] {{VALUE}}</sr-annote></pre></div><p></p><p dir="auto">设置好后在任意文档运行这个 quickadd 命令就会弹出一个框让你输入评论，回车之后就会在今日的日记显示该评论：</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810676-9bff8715-4618-469c-a639-a420bd24355f.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810676-9bff8715-4618-469c-a639-a420bd24355f.png"></div></a></p><p></p><p dir="auto">最后这个 log 也会同时出现在这篇文档的相应的 dataview 中了<sr-annote sr-annote-bg-color="true" data-id="1653986487960" data-type="paragraph" data-color-type="1">。</sr-annote>用子列表结构是为了兼容 Obsidian Memos<sr-annote sr-annote-bg-color="true" data-id="1653986487960" data-type="paragraph" data-color-type="1">。</sr-annote>这个技巧可以应用于所有的笔记，<strong><sr-annote sr-annote-bg-color="true" data-id="1653986487960" data-type="paragraph" data-color-type="1">这一整个 callouts 模块也建议保存为模板然后随时调用于所有的永久笔记</sr-annote></strong><sr-annote sr-annote-bg-color="true" data-id="1653986487960" data-type="paragraph" data-color-type="1">。</sr-annote></p><p></p><h4 dir="auto" id="sr-toc-15">为什么要把 Comments 的 Callout 用注释框起来</h4><p></p><p dir="auto">这是为了打印成 PDF 或者是发布到网上时忽略这个 callout。</p><p></p><h4 dir="auto" id="sr-toc-16">默认折叠 Comments callouts</h4><p></p><p dir="auto">虽然我这边没有这样子操作，你如果平时不太想看到 Comments callouts 的全部内容，可选择将 callouts 默认折叠（把 <code>+</code> 换成 <code>-</code>）。此时为了在折叠状态下也能直观地看到 <code>{{desc}}</code> ，可通过 dataview 的 inline expressions 把稍后读描述直接显示在 callouts 的标题上面：</p><p></p><p dir="auto"><code>&gt; [!example]+ **Comments**  </code></p><p></p><p dir="auto">把这句换成：</p><p></p><p dir="auto"><code>&gt; [!example]- **Comments**: `=this.Description`  </code></p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810688-0f8b2dd9-26e6-4dd7-82a1-c7762c3a93d7.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810688-0f8b2dd9-26e6-4dd7-82a1-c7762c3a93d7.png"></div></a></p><p></p><p dir="auto">想要再复杂一点的如日记上的最新的记录文本之类，就写 inline dataviewjs 吧。我就不展开了…… 对了，实现了记得告诉我怎么做（喂</p><p></p><h4 dir="auto" id="sr-toc-17">templater 模板有时候不会转换</h4><p></p><p dir="auto">templater 的一般玩家…… 呸，一般用户会设置成当你新建文档的时候自动运行全局替换的操作，所以当文档已存在，而简悦同步插件只是覆盖原来的内容的话， templater 不会自动运行替换操作 。碰到这种情况就再运行一次 <code>Replace templates in the active file</code> 的命令。</p><p></p><h4 dir="auto" id="sr-toc-18">Highlight Mentions 有什么用</h4><p></p><p dir="auto">大家可能在浏览网页文章的时候会发现，<strong>文章下面的评论比文章内容有价值多了</strong>。但是，简悦大部分情况下并不能完成文章评论内容的截取和标注的操作。如果直接在文献笔记上追加这个章节的内容，那么哪天不小心运行了简悦同步就会被覆盖。所以我决定曲线救国，用了一系列的方法去解决摘录文章评论的问题：</p><p></p><ul dir="auto">
-<li>如果发现文章下面的评论区里有价值的内容，在稍后读的元数据里添加标签 <code>Highlights</code></li>
-<li>简悦的稍后读元数据导出模板将会根据有无这个 <code>Highlights</code> 标签自动在 <code>Annotation</code> 和 <code>Reference</code> 两个章节之间追加一个 <code>Highlight Mentions</code> 的章节，内容指向另一个文档 <code>[[稍后读文献笔记_mentions#Highlight Mentions]]</code></li>
-<li>通过 quickadd 新建 <code>稍后读文献笔记_mentions.md</code>，然后在相应的章节里追加精华评论的内容。</li>
-<li>就算简悦插件把这个文献笔记内容覆盖，由于评论内容在另一个文档里，所以不会覆盖这些内容。也能正常显示。</li>
-</ul><p></p><p dir="auto">接下来就差怎么用 quickadd 去新建这个笔记了。 很可惜，quickadd 不支持快速创建一个基于当前笔记文件名的笔记，于是我打开了 Javascript 菜鸟教程，看了大概 4 个小时左右，写了一个 js 脚本来解决这个问题：</p><p></p><div><pre>module.exports = async (params) =&gt; {
-  console.log("Starting...")
-  console.log(params);
-  const currentFile = params.app.workspace.getActiveFile();
-  if (!currentFile) {
-      new Notice("No active file.");
-      return;
-  }
-  console.log("Found active file: ", currentFile.basename);
-
-  const currentFileName = currentFile.basename;
-  const currentFilePath = currentFile.path;
-  const newFilePath = currentFilePath.replace(/\.md$/g,'_mentions.md');
-  console.log("the New File Path:", newFilePath);
-
-  const dvTitle = params.app.plugins.plugins.dataview.api.page(currentFilePath).title;
-  if (!(dvTitle)) var currentTitle = currentFileName;
-  else var currentTitle = dvTitle;
-  console.log(dvTitle);
-  console.log(currentTitle);
-
-  const content = '---\ntype: Mentions\ncreated-date: &lt;% tp.date.now("YYYY-MM-DDTHH:mm:ss.SSSZZ") %&gt;\n---\n\n# ' + currentTitle + "\n\n- **LiteratureNotes**:: [[" + currentFileName + "]]  \n\n## Highlight Mentions\n\n";
-  
-  console.log(`Path: ${newFilePath}.\nContent: ${content}`);
-  
-  if (!(await params.app.vault.adapter.exists(newFilePath))) {
-    await params.app.vault.create(newFilePath,content);
-  }
-  else {
-    new Notice(`File ${newFilePath} already exists.` , 5000);
-  }
-  console.log("Finished!");
-}
-</pre></div><p></p><p dir="auto">然后再到 quickadd 新建一个 macro 命令，加载这个 js 文件即可。运行这个 quickadd 命令，就能成功创建一个 mentions 的笔记：</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810712-2753a80f-55dc-49d2-ab83-3f7e69c36143.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810712-2753a80f-55dc-49d2-ab83-3f7e69c36143.png"></div></a></p><p></p><p dir="auto">回到文献笔记上，也显示出了这个精华评论：</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810719-26a9162d-859d-4cb2-adf4-69804243fa67.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810719-26a9162d-859d-4cb2-adf4-69804243fa67.png"></div></a></p><p></p><h4 dir="auto" id="sr-toc-19">有时候标注导入时间非常长， Obsidian 卡住了……</h4><p></p><p dir="auto">因为标注里包含了离线图片。导入时间会随着图片的大小相应地延长，此时 Obsidian 就处于任何操作都无法进行的地步…… 我目前也只能等，然后用 quicker 脚本把离线图片统统替换成本地图片…… 具体就看相关的讨论或者自行解决吧，好像用万能的 python 也可以解决。</p><p></p><h3 dir="auto" id="sr-toc-20">标注模板</h3><p></p><p dir="auto">先丢模板：</p><p></p><div><pre>&lt;%
-let colors = [ '#B4D9FB', '#ffeb3b', '#a2e9f2', '#a1e0ff', '#a8ea68', '#ffb7da' ],
-    color  = colors[ annote.color ];
-if (unread.note &amp;&amp; unread.title != unread.note) {
-var filetitle = unread.note;
-}
-else {
-var filetitle = unread.title;
-}
-let wikilinks = "[[SR" + unread.idx + "@" + filetitle + "|📄]]";
--%&gt;
-&lt;% if (annote.note.startsWith("######")) { %&gt;
-&lt;% 
-let note = annote.note.slice(7);
--%&gt;
-###### &lt;% if (note) { %&gt;&lt;%- note %&gt;&lt;% } else { %&gt;{{an_text}}&lt;% } %&gt;
-&lt;% } else if (annote.note.startsWith("######")) { %&gt;
-&lt;% 
-let note = annote.note.slice(6);
--%&gt;
-###### &lt;% if (note) { %&gt;&lt;%- note %&gt;&lt;% } else { %&gt;{{an_text}}&lt;% } %&gt;
-&lt;% } else if (annote.note.startsWith("####")) { %&gt;
-&lt;% 
-let note = annote.note.slice(5);
--%&gt;
-#### &lt;% if (note) { %&gt;&lt;%- note %&gt;&lt;% } else { %&gt;{{an_text}}&lt;% } %&gt;
-&lt;% } else if (annote.note.startsWith("###")) { %&gt;
-&lt;% 
-let note = annote.note.slice(4);
--%&gt;
-### &lt;% if (note) { %&gt;&lt;%- note %&gt;&lt;% } else { %&gt;{{an_text}}&lt;% } %&gt;
-&lt;% } else { %&gt;
-&gt; &lt;%- wikilinks %&gt; &lt;mark style="background-color: &lt;%= color %&gt;"&gt;Highlights&lt;/mark&gt; [🧷](&lt;{{an_int_uri}}&gt;) [🌐](&lt;{{an_ext_uri}}&gt;) {{#|an_tag| }}  
-{{{html_format|&gt;|{{an_html}}}}}
-&lt;% if (annote.refs) { -%&gt;
-{{&gt; - 🔗|an_refs}}
-&lt;% } -%&gt;
-&lt;% if (annote.note) { -%&gt;
-&lt;% if (annote.note.startsWith("todo:") == false) { -%&gt;
-&gt;  
-&gt; - 📝{{an_note}}
-
-^sran-{{an_id}}
-&lt;% } else { -%&gt;
-&lt;% 
-let note = annote.note.slice(6);
--%&gt; 
-^sran-{{an_id}}
-
-- [ ] &lt;%- note %&gt; #web ^srtask-{{an_id}}
-&lt;% } -%&gt;
-&lt;% } else { %&gt;
-^sran-{{an_id}}
-&lt;% } -%&gt;
-&lt;% } -%&gt;
-
-</pre></div><p></p><p dir="auto">效果图（节选）：</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810730-e75c1f34-ab79-4f03-b0a5-2c20855e7c51.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810730-e75c1f34-ab79-4f03-b0a5-2c20855e7c51.png" style="width: auto;"></div></a></p><p></p><p dir="auto">有很多地方和默认推荐的模板差不多，我就提几个默认模板里没有的。</p><p></p><h4 dir="auto" id="sr-toc-21">标注的外部引用</h4><p></p><p dir="auto">对应的占位符是 <code>{{an_refs}}</code> 。虽然作者没有明说这个东西干什么用，但是我后来发现，<strong>外部引用可以不止是 URL 地址</strong>。比如 Markdown 链接，又比如指向 Obsidian 里的 MOC 的 Wikilinks，来与其他永久笔记建立双链。那怎么在简悦的稍后读里快速输入 Obsidian 的双链呢？我通过 quicker 写了一个简单的脚本进行实现：</p><p></p><details open="">
-  <summary>
-    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
-    <path fill-rule="evenodd" d="M16 3.75a.75.75 0 00-1.136-.643L11 5.425V4.75A1.75 1.75 0 009.25 3h-7.5A1.75 1.75 0 000 4.75v6.5C0 12.216.784 13 1.75 13h7.5A1.75 1.75 0 0011 11.25v-.675l3.864 2.318A.75.75 0 0016 12.25v-8.5zm-5 5.075l3.5 2.1v-5.85l-3.5 2.1v1.65zM9.5 6.75v-2a.25.25 0 00-.25-.25h-7.5a.25.25 0 00-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-4.5z"></path>
-</svg>
-    <span aria-label="Video description 2022-05-14_17-13-52.mp4">2022-05-14_17-13-52.mp4</span>
-    <span></span>
-  </summary>
-
-  <video src="https://user-images.githubusercontent.com/396190/170810813-fe709ea9-f6e2-46de-b91a-0939482c89a3.mp4" data-canonical-src="https://user-images.githubusercontent.com/396190/170810813-fe709ea9-f6e2-46de-b91a-0939482c89a3.mp4" controls="controls" muted="muted">
-
-  </video>
-</details><p></p><h4 dir="auto" id="sr-toc-22">标题定制</h4><p></p><ul dir="auto">
-<li>当标注的备注文本以 <code>###</code> 开头，则导出到 Obsidian 的时候该位置的标注会被转换成 <code>### 标注文本</code> 。</li>
-<li>上述的标注标题化可对应 3 级标题至 6 级标题。由于标注部分是二级标题，所以不做一级和二级标题的定制。</li>
-<li>当标注的备注文本为 <code>### 任意文本内容</code> 时，标注会被转换成 <code>### 任意文本内容</code> 。此时和标注文本内容无关。也就是说，<strong>你如果想要在文献笔记里添加标题，只需要在稍后读里随便找一个对应位置的文本添加标注，然后备注文本改成自己想要的文本内容就可以了</strong>。为了与其他标注做区分，你可以选择使用不同的标注颜色或者风格。</li>
-</ul><p></p><h4 dir="auto" id="sr-toc-23">给标注自动添加任务</h4><p></p><p dir="auto">当标注的备注文本是<code>todo: 任意文本内容</code>的时候，则导出到 Obsidian 时，该标注后面会追加一个 Obsidian Tasks 格式的任务。任务文本为：<code>- [ ] 任意文本内容 #web ^srtask-{{an_id}}</code>。通过 Obsidian 的 Tasks 插件在其他任务笔记添加 tasks 相关的代码块即可提取该任务。</p><p></p><div><pre>```tasks
-not done
-path does not include templates
-no scheduled date
-description includes #web
-starts before tomorrow
-hide task count
-```
-
-</pre></div><p></p><p dir="auto">效果：</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810843-b10341c1-5526-456b-9f7f-95ac0354e42e.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810843-b10341c1-5526-456b-9f7f-95ac0354e42e.png"></div></a></p><p></p><p dir="auto">当然这个做法也是有一定缺点：</p><p></p><ul dir="auto">
-<li>Backlink 里会显示 Section 名。和上面的标题定制一起使用而上面的标题和标注没有太多关系，会比较尴尬</li>
-<li>重新导出标注到 Obsidian 的时候，任务也会被重置；嘛重新标记完成就是了</li>
-</ul><p></p><h3 dir="auto" id="sr-toc-24">整理笔记</h3><p></p><p dir="auto">把标注导出到 Obsidian，也并不代表你学到了东西。按照卡片盒笔记法（此处省略几百字…… 老生常谈了，详情请自行查找有关文章然后用简悦标注一下导出到 Obsidian）</p><p></p><p dir="auto">不扯淡了，我就简单介绍一下自己关于整理笔记的想法吧。（注：并没有说我现在就是这么做的，目前正在努力付诸实践……）</p><p></p><h4 dir="auto" id="sr-toc-25">永久笔记</h4><p></p><p dir="auto">永久笔记，我个人理解是主要分两大类：</p><p></p><ul dir="auto">
-<li>XXX 是什么</li>
-<li>如何 XXX</li>
-</ul><p></p><p dir="auto">任何一个知识点用语言概括下来就是这两种。反正我是想不出其他的了。所以我个人认为，网页文章标注的整理也是基于这个规则来拆解原子笔记单位。</p><p></p><p dir="auto">当然这样子拆解成原子笔记，想必 Obsidian 的 Vault 里会蹦出大量的  <code>XXX是什么</code> 的笔记。双链关系图谱可以玩出花，然而没什么用。所以我选择通过 MOC 的概念把相关的知识点汇总起来，各个原子笔记单位以 Section 的形式保存在 MOC 里：</p><p></p><ul dir="auto">
-<li>XXX 是什么 （MOC）
-<ul dir="auto">
-<li>XXX 的 YYY 是什么 （Section 1）</li>
-<li>如何 把 XXX 给 ZZZ 了 （Section 2）</li>
-</ul>
-</li>
-</ul><p></p><p dir="auto">从科研工作者的角度看，MOC 就像是一篇综述，高度汇总了多个引用文献的内容，把这些知识点链接了起来。</p><p></p><h4 dir="auto" id="sr-toc-26">简悦标注系统的应用</h4><p></p><p dir="auto">简悦标注导出的是原文，然后就是外部引用、备注文本。导入到 Obsidian 之后，我们可以把这些内容拆解成前面所述的两类。</p><p></p><p dir="auto">比如我看了一篇关于简悦导出到 Obsidian 的文章。我可能标了很多关于 <code>如何把简悦标注导出到 Obsidian</code> 的标注，此时我可能会：</p><p></p><ul dir="auto">
-<li>导出标注到 Obsidian （文献笔记）</li>
-<li>新建一篇 <code>如何把简悦标注导出到 Obsidian</code> 的笔记，然后根据自身的尝试写好 “实验” 记录</li>
-<li>引用文献笔记的标注内容做溯源</li>
-</ul><p></p><p dir="auto">到这里，标注模板上预先设置的 Block ID 就有用了。通过 <code>Obsidian42 - Text Transporter</code> 插件，在标注引用块里任意位置右键就可以选择 <code>Copy block embeds from this selection</code> 以及 <code>Copy block embeds as an alias</code> ，就可以快速地把这段标注贴到别的笔记里。</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810857-6d81105e-4b06-456e-8994-14d20ece9c4f.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810857-6d81105e-4b06-456e-8994-14d20ece9c4f.png"></div></a></p><p></p><p dir="auto">然后每个 Hightlight 前面的笔记图标悬停鼠标就可以溯源。在这里我也推荐这个叫 <code>Hover Editor</code> 的神器。</p><p></p><p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/396190/170810847-c6b62d50-30bd-4293-a471-a949cdf1874d.png"><div class="sr-rd-content-center"><img class="" src="https://user-images.githubusercontent.com/396190/170810847-c6b62d50-30bd-4293-a471-a949cdf1874d.png"></div></a></p><p></p><p dir="auto">那么随着自己的文章阅读积累，越来越多的简悦标注导出的文章出来，<code>如何把简悦标注导出到其他平台</code> 的 MOC 就出来了，然后随着你越来越多地了解简悦的其他功能，<code>简悦是什么</code> 的 MOC 也就随之出来了……</p><p></p><p dir="auto">所以 Obsidian 其实是一个第二大脑养成的游戏，非常上头根本停不下来。</p><p></p><sr-blockquote>
-<p dir="auto">以下内容来自简悦官方。</p>
-</sr-blockquote><p></p><p dir="auto">关于简悦与 Obsidian 的更多联动方案，<a href="https://github.com/Kenshin/simpread/discussions?discussions_q=label%3Aobsidian">请看这里</a>。</p><p></p></sr-rd-content>
-                            <toc-bg><toc class="simpread-font simpread-theme-root" data-reactid=".1" style="width: initial; background-; border: 0px;"><outline class="toc-level-h2" data-reactid=".1.0" style="width: 165px;"><active data-reactid=".1.0.0" class=""></active><a class="toc-outline-theme-github" href="#sr-toc-0" data-reactid=".1.0.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.0.1.0">最终成形图</span></a></outline><outline class="toc-level-h2" data-reactid=".1.1" style="width: 165px;"><active data-reactid=".1.1.0" class=""></active><a class="toc-outline-theme-github" href="#sr-toc-1" data-reactid=".1.1.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.1.1.0">忏悔</span></a></outline><outline class="toc-level-h2" data-reactid=".1.2" style="width: 165px;"><active data-reactid=".1.2.0" ></active><a class="toc-outline-theme-github" href="#sr-toc-2" data-reactid=".1.2.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.2.1.0">工作流程</span></a></outline><outline class="toc-level-h2" data-reactid=".1.3" style="width: 165px;"><active data-reactid=".1.3.0" class=""></active><a class="toc-outline-theme-github" href="#sr-toc-3" data-reactid=".1.3.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.3.1.0">解释说明</span></a></outline><outline class="toc-level-h3" data-reactid=".1.4" style="width: 155px;"><active data-reactid=".1.4.0" class=""></active><a class="toc-outline-theme-github" href="#sr-toc-4" data-reactid=".1.4.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.4.1.0">为什么不用简悦的 API，而是用 Raindrop</span></a></outline><outline class="toc-level-h3" data-reactid=".1.5" style="width: 155px;"><active data-reactid=".1.5.0" class=""></active><a class="toc-outline-theme-github" href="#sr-toc-5" data-reactid=".1.5.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.5.1.0">为什么不在阅读模式下添加标注</span></a></outline><outline class="toc-level-h3" data-reactid=".1.6" style="width: 155px;"><active data-reactid=".1.6.0" class=""></active><a class="toc-outline-theme-github" href="#sr-toc-6" data-reactid=".1.6.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.6.1.0">为什么需要快速阅读</span></a></outline><outline class="toc-level-h2" data-reactid=".1.7" style="width: 165px;"><active data-reactid=".1.7.0" class=""></active><a class="toc-outline-theme-github" href="#sr-toc-7" data-reactid=".1.7.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.7.1.0">Obsidian 插件的使用</span></a></outline><outline class="toc-level-h3" data-reactid=".1.8" style="width: 155px;"><active data-reactid=".1.8.0"></active><a class="toc-outline-theme-github" href="#sr-toc-8" data-reactid=".1.8.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.8.1.0">可能要用到的 Obsidian 插件</span></a></outline><outline class="toc-level-h3" data-reactid=".1.9" style="width: 155px;"><active data-reactid=".1.9.0"></active><a class="toc-outline-theme-github" href="#sr-toc-9" data-reactid=".1.9.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.9.1.0">文件命名方式</span></a></outline><outline class="toc-level-h3" data-reactid=".1.a" style="width: 155px;"><active data-reactid=".1.a.0"></active><a class="toc-outline-theme-github" href="#sr-toc-10" data-reactid=".1.a.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.a.1.0">稍后读元数据模板</span></a></outline><outline class="toc-level-h3" data-reactid=".1.b" style="width: 155px;"><active data-reactid=".1.b.0"></active><a class="toc-outline-theme-github" href="#sr-toc-11" data-reactid=".1.b.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.b.1.0">简悦 Markdown 官方模板库</span></a></outline><outline class="toc-level-h4" data-reactid=".1.c" style="width: 145px;"><active data-reactid=".1.c.0"></active><a class="toc-outline-theme-github" href="#sr-toc-12" data-reactid=".1.c.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.c.1.0">alias 的设置</span></a></outline><outline class="toc-level-h4" data-reactid=".1.d" style="width: 145px;"><active data-reactid=".1.d.0"></active><a class="toc-outline-theme-github" href="#sr-toc-13" data-reactid=".1.d.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.d.1.0">banners 的设置</span></a></outline><outline class="toc-level-h4" data-reactid=".1.e" style="width: 145px;"><active data-reactid=".1.e.0"></active><a class="toc-outline-theme-github" href="#sr-toc-14" data-reactid=".1.e.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.e.1.0">这个 Comments 什么鬼</span></a></outline><outline class="toc-level-h4" data-reactid=".1.f" style="width: 145px;"><active data-reactid=".1.f.0"></active><a class="toc-outline-theme-github" href="#sr-toc-15" data-reactid=".1.f.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.f.1.0">为什么要把 Comments 的 Callout 用注释框起来</span></a></outline><outline class="toc-level-h4" data-reactid=".1.g" style="width: 145px;"><active data-reactid=".1.g.0"></active><a class="toc-outline-theme-github" href="#sr-toc-16" data-reactid=".1.g.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.g.1.0">默认折叠 Comments callouts</span></a></outline><outline class="toc-level-h4" data-reactid=".1.h" style="width: 145px;"><active data-reactid=".1.h.0"></active><a class="toc-outline-theme-github" href="#sr-toc-17" data-reactid=".1.h.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.h.1.0">templater 模板有时候不会转换</span></a></outline><outline class="toc-level-h4" data-reactid=".1.i" style="width: 145px;"><active data-reactid=".1.i.0"></active><a class="toc-outline-theme-github" href="#sr-toc-18" data-reactid=".1.i.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.i.1.0">Highlight Mentions 有什么用</span></a></outline><outline class="toc-level-h4" data-reactid=".1.j" style="width: 145px;"><active data-reactid=".1.j.0"></active><a class="toc-outline-theme-github" href="#sr-toc-19" data-reactid=".1.j.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.j.1.0">有时候标注导入时间非常长， Obsidian 卡住了……</span></a></outline><outline class="toc-level-h3" data-reactid=".1.k" style="width: 155px;"><active data-reactid=".1.k.0"></active><a class="toc-outline-theme-github" href="#sr-toc-20" data-reactid=".1.k.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.k.1.0">标注模板</span></a></outline><outline class="toc-level-h4" data-reactid=".1.l" style="width: 145px;"><active data-reactid=".1.l.0"></active><a class="toc-outline-theme-github" href="#sr-toc-21" data-reactid=".1.l.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.l.1.0">标注的外部引用</span></a></outline><outline class="toc-level-h4" data-reactid=".1.m" style="width: 145px;"><active data-reactid=".1.m.0"></active><a class="toc-outline-theme-github" href="#sr-toc-22" data-reactid=".1.m.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.m.1.0">标题定制</span></a></outline><outline class="toc-level-h4" data-reactid=".1.n" style="width: 145px;"><active data-reactid=".1.n.0"></active><a class="toc-outline-theme-github" href="#sr-toc-23" data-reactid=".1.n.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.n.1.0">给标注自动添加任务</span></a></outline><outline class="toc-level-h3" data-reactid=".1.o" style="width: 155px;"><active data-reactid=".1.o.0"></active><a class="toc-outline-theme-github" href="#sr-toc-24" data-reactid=".1.o.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.o.1.0">整理笔记</span></a></outline><outline class="toc-level-h4" data-reactid=".1.p" style="width: 145px;"><active data-reactid=".1.p.0"></active><a class="toc-outline-theme-github" href="#sr-toc-25" data-reactid=".1.p.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.p.1.0">永久笔记</span></a></outline><outline class="toc-level-h4" data-reactid=".1.q" style="width: 145px;"><active data-reactid=".1.q.0"></active><a class="toc-outline-theme-github" href="#sr-toc-26" data-reactid=".1.q.1" style="!important; font-size: 15px; font-weight: 400;"><span data-reactid=".1.q.1.0">简悦标注系统的应用</span></a></outline></toc></toc-bg>
+</dd>
+</dl><p></p><div label-module="lemmaSummary">
+<p>《中华人民共和国环境保护法》已由中华人民共和国<a target="_blank" href="https://baike.baidu.com/item/%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%B1%8A%E5%85%A8%E5%9B%BD%E4%BA%BA%E6%B0%91%E4%BB%A3%E8%A1%A8%E5%A4%A7%E4%BC%9A%E5%B8%B8%E5%8A%A1%E5%A7%94%E5%91%98%E4%BC%9A/8016011" data-lemmaid="8016011">第十二届全国人民代表大会常务委员会</a>第八次会议于 2014 年 4 月 24 日修订通过，现将修订后的《中华人民共和国环境保护法》公布，自 2015 年 1 月 1 日起施行。<sup data-sup="1" data-ctrmap=":1,">
+[1]</sup><a name="ref_[1]_38920">&nbsp;</a>
+</p>
+</div><p></p><p>中华人民共和国环境保护法</p><p>（1989 年 12 月 26 日第七届全国人民代表大会常务委员会第十一次会议通过</p><p>2014 年 4 月 24 日第十二届全国人民代表大会常务委员会第八次会议修订）</p><p>目 录</p><p>第一章 总则</p><p>第二章 监督管理</p><p>第三章 保护和改善环境</p><p>第四章 防治污染和其他公害</p><p>第五章 信息公开和公众参与</p><p>第六章 法律责任</p><p>第七章 附则</p><p>第一章 总则</p><p>第一条 为保护和改善环境，防治污染和其他公害，保障公众健康，推进生态文明建设，促进经济社会可持续发展，制定本法。</p><p>第二条 本法所称环境，是指影响人类生存和发展的各种天然的和经过人工改造的自然因素的总体，包括大气、水、海洋、土地、矿藏、森林、草原、湿地、野生生物、自然遗迹、人文遗迹、自然保护区、风景名胜区、城市和乡村等。</p><p>第三条 本法适用于中华人民共和国领域和中华人民共和国管辖的其他海域。</p><p>第四条 保护环境是国家的基本国策。</p><p>国家采取有利于节约和循环利用资源、保护和改善环境、促进人与自然和谐的经济、技术政策和措施，使经济社会发展与环境保护相协调。</p><p>第五条 环境保护坚持保护优先、预防为主、综合治理、公众参与、损害担责的原则。</p><p>第六条 一切单位和个人都有保护环境的义务。</p><p>地方各级人民政府应当对本行政区域的环境质量负责。</p><p>企业事业单位和其他生产经营者应当防止、减少环境污染和生态破坏，对所造成的损害依法承担责任。</p><p>公民应当增强环境保护意识，采取低碳、节俭的生活方式，自觉履行环境保护义务。</p><p>第七条 国家支持环境保护科学技术研究、开发和应用，鼓励环境保护产业发展，促进环境保护信息化建设，提高环境保护科学技术水平。</p><p>第八条 各级人民政府应当加大保护和改善环境、防治污染和其他公害的财政投入，提高财政资金的使用效益。</p><p>第九条 各级人民政府应当加强环境保护宣传和普及工作，鼓励基层群众性自治组织、社会组织、环境保护志愿者开展环境保护法律法规和环境保护知识的宣传，营造保护环境的良好风气。</p><p>教育行政部门、学校应当将环境保护知识纳入学校教育内容，培养学生的环境保护意识。</p><p>新闻媒体应当开展环境保护法律法规和环境保护知识的宣传，对环境违法行为进行舆论监督。</p><p>第十条 国务院环境保护主管部门，对全国环境保护工作实施统一监督管理；县级以上地方人民政府环境保护主管部门，对本行政区域环境保护工作实施统一监督管理。</p><p>县级以上人民政府有关部门和军队环境保护部门，依照有关法律的规定对资源保护和污染防治等环境保护工作实施监督管理。</p><p>第十一条 对保护和改善环境有显著成绩的单位和个人，由人民政府给予奖励。</p><p>第十二条 每年 6 月 5 日为环境日。</p><p>第二章 监督管理</p><p>第十三条 县级以上人民政府应当将环境保护工作纳入国民经济和社会发展规划。</p><p>国务院环境保护主管部门会同有关部门，根据国民经济和社会发展规划编制国家环境保护规划，报国务院批准并公布实施。</p><p>县级以上地方人民政府环境保护主管部门会同有关部门，根据国家环境保护规划的要求，编制本行政区域的环境保护规划，报同级人民政府批准并公布实施。</p><p>环境保护规划的内容应当包括生态保护和污染防治的目标、任务、保障措施等，并与主体功能区规划、土地利用总体规划和城乡规划等相衔接。</p><p>第十四条 国务院有关部门和省、自治区、直辖市人民政府组织制定经济、技术政策，应当充分考虑对环境的影响，听取有关方面和专家的意见。</p><p>第十五条 国务院环境保护主管部门制定国家环境质量标准。</p><p>省、自治区、直辖市人民政府对国家环境质量标准中未作规定的项目，可以制定地方环境质量标准；对国家环境质量标准中已作规定的项目，可以制定严于国家环境质量标准的地方环境质量标准。地方环境质量标准应当报国务院环境保护主管部门备案。</p><p>国家鼓励开展环境基准研究。</p><p>第十六条 国务院环境保护主管部门根据国家环境质量标准和国家经济、技术条件，制定国家污染物排放标准。</p><p>省、自治区、直辖市人民政府对国家污染物排放标准中未作规定的项目，可以制定地方污染物排放标准；对国家污染物排放标准中已作规定的项目，可以制定严于国家污染物排放标准的地方污染物排放标准。地方污染物排放标准应当报国务院环境保护主管部门备案。</p><p>第十七条 国家建立、健全环境监测制度。国务院环境保护主管部门制定监测规范，会同有关部门组织监测网络，统一规划国家环境质量监测站（点）的设置，建立监测数据共享机制，加强对环境监测的管理。</p><p>有关行业、专业等各类环境质量监测站（点）的设置应当符合法律法规规定和监测规范的要求。</p><p>监测机构应当使用符合国家标准的监测设备，遵守监测规范。监测机构及其负责人对监测数据的真实性和准确性负责。</p><p>第十八条 省级以上人民政府应当组织有关部门或者委托专业机构，对环境状况进行调查、评价，建立环境资源承载能力监测预警机制。</p><p>第十九条 编制有关开发利用规划，建设对环境有影响的项目，应当依法进行环境影响评价。</p><p>未依法进行环境影响评价的开发利用规划，不得组织实施；未依法进行环境影响评价的建设项目，不得开工建设。</p><p>第二十条 国家建立跨行政区域的重点区域、流域环境污染和生态破坏联合防治协调机制，实行统一规划、统一标准、统一监测、统一的防治措施。</p><p>前款规定以外的跨行政区域的环境污染和生态破坏的防治，由上级人民政府协调解决，或者由有关地方人民政府协商解决。</p><p>第二十一条 国家采取财政、税收、价格、政府采购等方面的政策和措施，鼓励和支持环境保护技术装备、资源综合利用和环境服务等环境保护产业的发展。</p><p>第二十二条 企业事业单位和其他生产经营者，在污染物排放符合法定要求的基础上，进一步减少污染物排放的，人民政府应当依法采取财政、税收、价格、政府采购等方面的政策和措施予以鼓励和支持。</p><p>第二十三条 企业事业单位和其他生产经营者，为改善环境，依照有关规定转产、搬迁、关闭的，人民政府应当予以支持。</p><p>第二十四条 县级以上人民政府环境保护主管部门及其委托的环境监察机构和其他负有环境保护监督管理职责的部门，有权对排放污染物的企业事业单位和其他生产经营者进行现场检查。被检查者应当如实反映情况，提供必要的资料。实施现场检查的部门、机构及其工作人员应当为被检查者保守商业秘密。</p><p>第二十五条 企业事业单位和其他生产经营者违反法律法规规定排放污染物，造成或者可能造成严重污染的，县级以上人民政府环境保护主管部门和其他负有环境保护监督管理职责的部门，可以查封、扣押造成污染物排放的设施、设备。</p><p>第二十六条 国家实行环境保护目标责任制和考核评价制度。县级以上人民政府应当将环境保护目标完成情况纳入对本级人民政府负有环境保护监督管理职责的部门及其负责人和下级人民政府及其负责人的考核内容，作为对其考核评价的重要依据。考核结果应当向社会公开。</p><p>第二十七条 县级以上人民政府应当每年向本级人民代表大会或者人民代表大会常务委员会报告环境状况和环境保护目标完成情况，对发生的重大环境事件应当及时向本级人民代表大会常务委员会报告，依法接受监督。</p><p>第三章 保护和改善环境</p><p>第二十八条 地方各级人民政府应当根据环境保护目标和治理任务，采取有效措施，改善环境质量。</p><p>未达到国家环境质量标准的重点区域、流域的有关地方人民政府，应当制定限期达标规划，并采取措施按期达标。</p><p>第二十九条 国家在重点生态功能区、生态环境敏感区和脆弱区等区域划定生态保护红线，实行严格保护。</p><p>各级人民政府对具有代表性的各种类型的自然生态系统区域，珍稀、濒危的野生动植物自然分布区域，重要的水源涵养区域，具有重大科学文化价值的地质构造、著名溶洞和化石分布区、冰川、火山、温泉等自然遗迹，以及人文遗迹、古树名木，应当采取措施予以保护，严禁破坏。</p><p>第三十条 开发利用自然资源，应当合理开发，保护生物多样性，保障生态安全，依法制定有关生态保护和恢复治理方案并予以实施。</p><p>引进外来物种以及研究、开发和利用生物技术，应当采取措施，防止对生物多样性的破坏。</p><p>第三十一条 国家建立、健全生态保护补偿制度。</p><p>国家加大对生态保护地区的财政转移支付力度。有关地方人民政府应当落实生态保护补偿资金，确保其用于生态保护补偿。</p><p>国家指导受益地区和生态保护地区人民政府通过协商或者按照市场规则进行生态保护补偿。</p><p>第三十二条 国家加强对大气、水、土壤等的保护，建立和完善相应的调查、监测、评估和修复制度。</p><p>第三十三条 各级人民政府应当加强对农业环境的保护，促进农业环境保护新技术的使用，加强对农业污染源的监测预警，统筹有关部门采取措施，防治土壤污染和土地沙化、盐渍化、贫瘠化、石漠化、地面沉降以及防治植被破坏、水土流失、水体富营养化、水源枯竭、种源灭绝等生态失调现象，推广植物病虫害的综合防治。</p><p>县级、乡级人民政府应当提高农村环境保护公共服务水平，推动农村环境综合整治。</p><p>第三十四条 国务院和沿海地方各级人民政府应当加强对海洋环境的保护。向海洋排放污染物、倾倒废弃物，进行海岸工程和海洋工程建设，应当符合法律法规规定和有关标准，防止和减少对海洋环境的污染损害。</p><p>第三十五条 城乡建设应当结合当地自然环境的特点，保护植被、水域和自然景观，加强城市园林、绿地和风景名胜区的建设与管理。</p><p>第三十六条 国家鼓励和引导公民、法人和其他组织使用有利于保护环境的产品和再生产品，减少废弃物的产生。</p><p>国家机关和使用财政资金的其他组织应当优先采购和使用节能、节水、节材等有利于保护环境的产品、设备和设施。</p><p>第三十七条 地方各级人民政府应当采取措施，组织对生活废弃物的分类处置、回收利用。</p><p>第三十八条 公民应当遵守环境保护法律法规，配合实施环境保护措施，按照规定对生活废弃物进行分类放置，减少日常生活对环境造成的损害。</p><p>第三十九条 国家建立、健全环境与健康监测、调查和风险评估制度；鼓励和组织开展环境质量对公众健康影响的研究，采取措施预防和控制与环境污染有关的疾病。</p><p>第四章 防治污染和其他公害</p><p>第四十条 国家促进清洁生产和资源循环利用。</p><p>国务院有关部门和地方各级人民政府应当采取措施，推广清洁能源的生产和使用。</p><p>企业应当优先使用清洁能源，采用资源利用率高、污染物排放量少的工艺、设备以及废弃物综合利用技术和污染物无害化处理技术，减少污染物的产生。</p><p>第四十一条 建设项目中防治污染的设施，应当与主体工程同时设计、同时施工、同时投产使用。防治污染的设施应当符合经批准的环境影响评价文件的要求，不得擅自拆除或者闲置。</p><p>第四十二条 排放污染物的企业事业单位和其他生产经营者，应当采取措施，防治在生产建设或者其他活动中产生的废气、废水、废渣、医疗废物、粉尘、恶臭气体、放射性物质以及噪声、振动、光辐射、电磁辐射等对环境的污染和危害。</p><p>排放污染物的企业事业单位，应当建立环境保护责任制度，明确单位负责人和相关人员的责任。</p><p>重点排污单位应当按照国家有关规定和监测规范安装使用监测设备，保证监测设备正常运行，保存原始监测记录。</p><p>严禁通过暗管、渗井、渗坑、灌注或者篡改、伪造监测数据，或者不正常运行防治污染设施等逃避监管的方式违法排放污染物。</p><p>第四十三条 排放污染物的企业事业单位和其他生产经营者，应当按照国家有关规定缴纳排污费。排污费应当全部专项用于环境污染防治，任何单位和个人不得截留、挤占或者挪作他用。</p><p>依照法律规定征收环境保护税的，不再征收排污费。</p><p>第四十四条 国家实行重点污染物排放总量控制制度。重点污染物排放总量控制指标由国务院下达，省、自治区、直辖市人民政府分解落实。企业事业单位在执行国家和地方污染物排放标准的同时，应当遵守分解落实到本单位的重点污染物排放总量控制指标。</p><p>对超过国家重点污染物排放总量控制指标或者未完成国家确定的环境质量目标的地区，省级以上人民政府环境保护主管部门应当暂停审批其新增重点污染物排放总量的建设项目环境影响评价文件。</p><p>第四十五条 国家依照法律规定实行排污许可管理制度。</p><p>实行排污许可管理的企业事业单位和其他生产经营者应当按照排污许可证的要求排放污染物；未取得排污许可证的，不得排放污染物。</p><p>第四十六条 国家对严重污染环境的工艺、设备和产品实行淘汰制度。任何单位和个人不得生产、销售或者转移、使用严重污染环境的工艺、设备和产品。</p><p>禁止引进不符合我国环境保护规定的技术、设备、材料和产品。</p><p>第四十七条 各级人民政府及其有关部门和企业事业单位，应当依照《中华人民共和国突发事件应对法》的规定，做好突发环境事件的风险控制、应急准备、应急处置和事后恢复等工作。</p><p>县级以上人民政府应当建立环境污染公共监测预警机制，组织制定预警方案；环境受到污染，可能影响公众健康和环境安全时，依法及时公布预警信息，启动应急措施。</p><p>企业事业单位应当按照国家有关规定制定突发环境事件应急预案，报环境保护主管部门和有关部门备案。在发生或者可能发生突发环境事件时，企业事业单位应当立即采取措施处理，及时通报可能受到危害的单位和居民，并向环境保护主管部门和有关部门报告。</p><p>突发环境事件应急处置工作结束后，有关人民政府应当立即组织评估事件造成的环境影响和损失，并及时将评估结果向社会公布。</p><p>第四十八条 生产、储存、运输、销售、使用、处置化学物品和含有放射性物质的物品，应当遵守国家有关规定，防止污染环境。</p><p>第四十九条 各级人民政府及其农业等有关部门和机构应当指导农业生产经营者科学种植和养殖，科学合理施用农药、化肥等农业投入品，科学处置农用薄膜、农作物秸秆等农业废弃物，防止农业面源污染。</p><p>禁止将不符合农用标准和环境保护标准的固体废物、废水施入农田。施用农药、化肥等农业投入品及进行灌溉，应当采取措施，防止重金属和其他有毒有害物质污染环境。</p><p>畜禽养殖场、养殖小区、定点屠宰企业等的选址、建设和管理应当符合有关法律法规规定。从事畜禽养殖和屠宰的单位和个人应当采取措施，对畜禽粪便、尸体和污水等废弃物进行科学处置，防止污染环境。</p><p>县级人民政府负责组织农村生活废弃物的处置工作。</p><p>第五十条 各级人民政府应当在财政预算中安排资金，支持农村饮用水水源地保护、生活污水和其他废弃物处理、畜禽养殖和屠宰污染防治、土壤污染防治和农村工矿污染治理等环境保护工作。</p><p>第五十一条 各级人民政府应当统筹城乡建设污水处理设施及配套管网，固体废物的收集、运输和处置等环境卫生设施，危险废物集中处置设施、场所以及其他环境保护公共设施，并保障其正常运行。</p><p>第五十二条 国家鼓励投保环境污染责任保险。</p><p>第五章 信息公开和公众参与</p><p>第五十三条 公民、法人和其他组织依法享有获取环境信息、参与和监督环境保护的权利。</p><p>各级人民政府环境保护主管部门和其他负有环境保护监督管理职责的部门，应当依法公开环境信息、完善公众参与程序，为公民、法人和其他组织参与和监督环境保护提供便利。</p><p>第五十四条 国务院环境保护主管部门统一发布国家环境质量、重点污染源监测信息及其他重大环境信息。省级以上人民政府环境保护主管部门定期发布环境状况公报。</p><p>县级以上人民政府环境保护主管部门和其他负有环境保护监督管理职责的部门，应当依法公开环境质量、环境监测、突发环境事件以及环境行政许可、行政处罚、排污费的征收和使用情况等信息。</p><p>县级以上地方人民政府环境保护主管部门和其他负有环境保护监督管理职责的部门，应当将企业事业单位和其他生产经营者的环境违法信息记入社会诚信档案，及时向社会公布违法者名单。</p><p>第五十五条 重点排污单位应当如实向社会公开其主要污染物的名称、排放方式、排放浓度和总量、超标排放情况，以及防治污染设施的建设和运行情况，接受社会监督。</p><p>第五十六条 对依法应当编制环境影响报告书的建设项目，建设单位应当在编制时向可能受影响的公众说明情况，充分征求意见。</p><p>负责审批建设项目环境影响评价文件的部门在收到建设项目环境影响报告书后，除涉及国家秘密和商业秘密的事项外，应当全文公开；发现建设项目未充分征求公众意见的，应当责成建设单位征求公众意见。</p><p>第五十七条 公民、法人和其他组织发现任何单位和个人有污染环境和破坏生态行为的，有权向环境保护主管部门或者其他负有环境保护监督管理职责的部门举报。</p><p>公民、法人和其他组织发现地方各级人民政府、县级以上人民政府环境保护主管部门和其他负有环境保护监督管理职责的部门不依法履行职责的，有权向其上级机关或者监察机关举报。</p><p>接受举报的机关应当对举报人的相关信息予以保密，保护举报人的合法权益。</p><p>第五十八条 对污染环境、破坏生态，损害社会公共利益的行为，符合下列条件的社会组织可以向人民法院提起诉讼：</p><p>（一）依法在设区的市级以上人民政府民政部门登记；</p><p>（二）专门从事环境保护公益活动连续五年以上且无违法记录。</p><p>符合前款规定的社会组织向人民法院提起诉讼，人民法院应当依法受理。</p><p>提起诉讼的社会组织不得通过诉讼牟取经济利益。</p><p>第六章 法律责任</p><p>第五十九条 企业事业单位和其他生产经营者违法排放污染物，受到罚款处罚，被责令改正，拒不改正的，依法作出处罚决定的行政机关可以自责令改正之日的次日起，按照原处罚数额按日连续处罚。</p><p>前款规定的罚款处罚，依照有关法律法规按照防治污染设施的运行成本、违法行为造成的直接损失或者违法所得等因素确定的规定执行。</p><p>地方性法规可以根据环境保护的实际需要，增加第一款规定的按日连续处罚的违法行为的种类。</p><p>第六十条 企业事业单位和其他生产经营者超过污染物排放标准或者超过重点污染物排放总量控制指标排放污染物的，县级以上人民政府环境保护主管部门可以责令其采取限制生产、停产整治等措施；情节严重的，报经有批准权的人民政府批准，责令停业、关闭。</p><p>第六十一条 建设单位未依法提交建设项目环境影响评价文件或者环境影响评价文件未经批准，擅自开工建设的，由负有环境保护监督管理职责的部门责令停止建设，处以罚款，并可以责令恢复原状。</p><p>第六十二条 违反本法规定，重点排污单位不公开或者不如实公开环境信息的，由县级以上地方人民政府环境保护主管部门责令公开，处以罚款，并予以公告。</p><p>第六十三条 企业事业单位和其他生产经营者有下列行为之一，尚不构成犯罪的，除依照有关法律法规规定予以处罚外，由县级以上人民政府环境保护主管部门或者其他有关部门将案件移送公安机关，对其直接负责的主管人员和其他直接责任人员，处十日以上十五日以下拘留；情节较轻的，处五日以上十日以下拘留：</p><p>（一）建设项目未依法进行环境影响评价，被责令停止建设，拒不执行的；</p><p>（二）违反法律规定，未取得排污许可证排放污染物，被责令停止排污，拒不执行的；</p><p><sr-annote data-id="1654334101844" data-color-type="5" sr-annote-bg-color="true">（三）通过暗管、渗井、渗坑、灌注或者篡改、伪造监测数据，或者不正常运行防治污染设施等逃避监管的方式违法排放污染物的；</sr-annote></p><p>（四）生产、使用国家明令禁止生产、使用的农药，被责令改正，拒不改正的。</p><p>第六十四条 因污染环境和破坏生态造成损害的，应当依照《中华人民共和国侵权责任法》的有关规定承担侵权责任。</p><p>第六十五条 环境影响评价机构、环境监测机构以及从事环境监测设备和防治污染设施维护、运营的机构，在有关环境服务活动中弄虚作假，对造成的环境污染和生态破坏负有责任的，除依照有关法律法规规定予以处罚外，还应当与造成环境污染和生态破坏的其他责任者承担连带责任。</p><p>第六十六条 提起环境损害赔偿诉讼的时效期间为三年，从当事人知道或者应当知道其受到损害时起计算。</p><p>第六十七条 上级人民政府及其环境保护主管部门应当加强对下级人民政府及其有关部门环境保护工作的监督。发现有关工作人员有违法行为，依法应当给予处分的，应当向其任免机关或者监察机关提出处分建议。</p><p>依法应当给予行政处罚，而有关环境保护主管部门不给予行政处罚的，上级人民政府环境保护主管部门可以直接作出行政处罚的决定。</p><p>第六十八条 地方各级人民政府、县级以上人民政府环境保护主管部门和其他负有环境保护监督管理职责的部门有下列行为之一的，对直接负责的主管人员和其他直接责任人员给予记过、记大过或者降级处分；造成严重后果的，给予撤职或者开除处分，其主要负责人应当引咎辞职：</p><p>（一）不符合行政许可条件准予行政许可的；</p><p>（二）对环境违法行为进行包庇的；</p><p>（三）依法应当作出责令停业、关闭的决定而未作出的；</p><p>（四）对超标排放污染物、采用逃避监管的方式排放污染物、造成环境事故以及不落实生态保护措施造成生态破坏等行为，发现或者接到举报未及时查处的；</p><p>（五）违反本法规定，查封、扣押企业事业单位和其他生产经营者的设施、设备的；</p><p>（六）篡改、伪造或者指使篡改、伪造监测数据的；</p><p>（七）应当依法公开环境信息而未公开的；</p><p>（八）将征收的排污费截留、挤占或者挪作他用的；</p><p>（九）法律法规规定的其他违法行为。</p><p>第六十九条 违反本法规定，构成犯罪的，依法追究刑事责任。</p><p>第七章 附则</p><p>第七十条 本法自 2015 年 1 月 1 日起施行。<sup data-sup="1" data-ctrmap=":1,">
+[1]</sup><a name="ref_[1]_38920">&nbsp;</a>
+</p><p></p><p>（一）全国人民代表大会法律委员会关于《中华人民共和国环境保护法 (修订草案二次审议稿)》修改意见的报告</p><p>全国人民代表大会法律委员会关于《中华人民共和国环境保护法 (修订草案二次审议稿)》修改意见的报告</p><p>－－2014 年 4 月 24 日在第十二届全国人民代表大会常务委员会第八次会议上</p><p>全国人民代表大会常务委员会：</p><p>本次常委会会议于 4 月 22 日上午对环境保护法 (修订草案二次审议稿) 进行了分组审议，普遍认为，草案已经比较成熟，建议进一步修改后，提请本次会议通过。同时，有些常委会组成人员还提出了一些修改意见。法律委员会于 4 月 23 日上午召开会议，逐条研究了常委会组成人员的审议意见，对草案进行了审议。环境与资源保护委员会、环境保护部、国务院法制办公室的负责同志列席了会议。法律委员会认为，草案是可行的，同时，提出以下修改意见：</p><p>一、修订草案二次审议稿第十九条第二款规定，未依法进行环境影响评价的建设项目，不得开工建设。有的常委委员提出，开发利用规划未依法进行环境影响评价的，也不得组织实施。法律委员会经研究，建议在这一款中增加规定：未依法进行环境影响评价的开发利用规划，不得组织实施。</p><p>二、修订草案二次审议稿第二十七条规定，县级以上人民政府应当每年向本级人民代表大会或者人民代表大会常务委员会报告环境状况和环境保护目标的完成情况；县级以上地方人民政府对本行政区域发生的重大环境事件应当及时向本级人民代表大会常务委员会提出专项报告，依法接受监督。有的常委委员提出，发生重大环境事件，国务院也应当向全国人大常委会报告。法律委员会经研究，建议将这一条修改为：县级以上人民政府应当每年向本级人民代表大会或者人民代表大会常务委员会报告环境状况和环境保护目标的完成情况，对发生的重大环境事件应当及时向本级人民代表大会常务委员会报告，依法接受监督。</p><p>三、修订草案二次审议稿第三十六条规定，国家机关和使用财政资金的其他组织应当使用节能、节水、节材和有利于保护环境的产品、设备和设施。有的常委会组成人员提出，对本条规定的节能环保产品、设备和设施，应当在政府采购中优先采购。法律委员会经研究，建议将这一条修改为：国家机关和使用财政资金的其他组织应当优先采购和使用节能、节水、节材等有利于保护环境的产品、设备和设施。</p><p>四、修订草案二次审议稿第三十九条规定，国家鼓励和组织环境质量对公众健康影响的研究，采取措施预防和控制与环境污染有关的疾病。有的常委委员提出，应当增加环境与健康监测、调查和风险评估的规定。法律委员会经研究，建议将这一条修改为：国家建立、健全环境与健康监测、调查和风险评估制度；鼓励和组织开展环境质量对公众健康影响的研究，采取措施预防和控制与环境污染有关的疾病。</p><p>五、修订草案二次审议稿第四十五条第二款规定，实行排污许可管理的企业事业单位和其他生产经营者应当按照排污许可证载明的要求排放污染物。有些常委委员提出，应明确应当取得而未取得排污许可证的企业事业单位和其他生产经营者不得排放污染物。法律委员会经研究，建议将这一款修改为：实行排污许可管理的企业事业单位和其他生产经营者应当按照排污许可证的要求排放污染物；未取得排污许可证的，不得排放污染物。</p><p>六、修订草案二次审议稿第四十九条第三款规定，畜禽养殖场、养殖小区、定点屠宰企业等选址、建设和管理应当符合有关法律法规规定，采取措施，对畜禽粪便、尸体、污水等废弃物进行科学处置，防止污染环境。有的常委委员提出，对从事畜禽养殖的单位和个人的环保义务都应当作出规定。法律委员会经研究，建议将这一款修改为：畜禽养殖场、养殖小区、定点屠宰企业等的选址、建设和管理应当符合有关法律法规规定。从事畜禽养殖和屠宰的单位和个人应当采取措施，对畜禽粪便、尸体和污水等废弃物进行科学处置，防止污染环境。</p><p>七、修订草案二次审议稿第五十八条第一款规定，提起环境公益诉讼的社会组织需要符合的条件之一是 “专门从事环境保护公益活动连续五年以上且信誉良好”。有的常委委员、代表提出，“信誉良好” 实践中难以把握。法律委员会经研究，建议将 “信誉良好” 修改为“无违法记录”。</p><p>八、修订草案二次审议稿第六十三条规定了适用行政拘留处罚的环境违法行为。有些常委会组成人员、代表提出，本条列举的有些行为，构成犯罪的，应当依法追究刑事责任。法律委员会经研究认为，我国刑法对破坏环境资源保护罪有专门规定，修订草案二次审议稿第六十九条也作了衔接性规定，可以依照这些规定追究第六十三条中构成犯罪行为的刑事责任，建议将这一条中相关表述修改为：企业事业单位和其他生产经营者有本条规定的行为之一，尚不构成犯罪的，除依照有关法律法规规定予以处罚外，由县级以上人民政府环境保护主管部门或者其他有关部门将案件移送公安机关，对其直接负责的主管人员和其他直接责任人员，处十日以上十五日以下拘留；情节较轻的，处五日以上十日以下拘留。</p><p>此外，根据常委会组成人员的审议意见，还对修订草案二次审议稿作了一些文字修改。</p><p>修订草案建议表决稿已按上述意见作了修改，法律委员会建议本次常委会会议通过。</p><p>在常委会审议中，有些常委会组成人员还对大气、水、土壤和固体废物等的污染防治提出了修改意见。这些意见所涉及的问题，有的在环境保护单行法律中已有规定，有的可以在本法通过后修改环境保护单行法律时作出规定。目前，大气污染防治法修改已经列入常委会 2014 年立法工作计划，水污染防治法修改、土壤污染防治法制定也已经列入本届常委会立法规划。法律委员会建议，在这些法律的修改和制定过程中继续深入研究相关意见，完善相关制度。</p><p>有些常委委员、地方和企业还提出，目前环境领域的行政审批环节多、周期长，企业负担重，应当简化。法律委员会建议，各级人民政府及其环境保护主管部门和相关部门在加强执法监管的同时，按照行政审批制度改革的精神对环境领域的行政审批进行整合，减少环节，简化程序，提高效率。</p><p>在常委会审议中，许多常委会组成人员和列席会议人员提出，目前我国环境问题的形成，有历史原因，也有现实原因，解决环境问题是一项长期而艰巨的任务，需要全社会共同努力。法律委员会建议法律通过后，各级人民政府及其环境保护主管部门和相关部门应当抓紧做好本法实施的各项工作，一是要做好配套法规、规章的制定和修改工作；二是加强对执法人员的培训，提高执法人员严格、廉洁执法能力，加大执法力度；三是加强宣传和舆论引导，增强全社会的环境保护意识，让环境保护的理念深入人心，确保法律得到有效实施。</p><p>修订草案建议表决稿和以上报告是否妥当，请审议。</p><p></p><p>（一）《中华人民共和国环境保护法》适用范围</p><p>主编：信春鹰</p><p>来源：中华人民共和国环境保护法释义     引用 10-12 页</p><p>法律的适用范围也称法律的效力，包括法律的空间效力、法律的时间效力和法律对人的效力。本条是关于环境保护法空间效力的规定。法律的空间效力，是指法律在哪些空间范围或者地域范围内发生效力。法律的空间效力与国家主权直接相关，适用于该国主权所及一切领域。</p><p>本条规定的 “中华人民共和国领域”，是指我国行使国家主权的空间，包括我国的领陆、领水、领空；也包括延伸意义的领域，如驻外使馆；还包括在境外的飞行器、停泊在境外的飞行器和停泊在境外的船舶。领陆是指国家疆界以内的陆地领土。根据领海及毗连区法的规定，领陆包括中华人民共和国大陆及其沿海岛屿、台湾及其包括钓鱼岛在内的附属各岛、澎湖列岛、东沙群岛、西沙群岛、中沙群岛、南沙群岛及其他一切属于中华人民共和国的岛屿。我国的领水，包括内水和领海。根据领海及毗连区法的规定，内水为中华人民共和国领海基线向陆地一侧的水域；领海为邻接中华人民共和国陆地领土和内水的一带海域，其宽度为从领海基线量起 12 海里。领空是指领陆和领水之上的空域。</p><p>根据专属经济区和大陆架法的规定，“中华人民共和国管辖的其他海域” 包括专属经济区和大陆架。专属经济区，是指领海以外并邻接领海的区域，从测算领海宽度的基线量起延至 200 海里的海域。大陆架，是指领海以外依本国陆地领土的全部自然延伸，扩展到大陆边外缘的海底区域的海床和底土；如果从测算领海宽度的基线量起至大陆边外缘的距离不足 200 海里，则扩展至 200 海里。因此，我国在专属经济区和大陆架享有主权性权利，有权保护和保全专属经济区和大陆架的海洋环境及其资源。专属经济区和大陆架法规定，中华人民共和国主管机关有权采取各种必要的养护和管理措施，确保专属经济区的生物资源不受过度开发的危害。中华人民共和国主管机关有权采取必要的措施，防止、减少和控制海洋环境的污染，保护和保全专属经济区和大陆架的海洋环境。</p><p>其他与环境保护相关的法律中，水污染防治法、固体废物污染环境防治法、放射性污染防治法、环境噪声污染防治法均规定本法在中华人民共和国领域内适用；而海洋环境保护法除规定在中华人民共和国海域内适用外，还对域外效力作出了特殊规定：在中华人民共和国管辖海域以外，造成中华人民共和国管辖海域污染的，也适用本法。</p><p>应当指出，根据本条规定的适用范围，任何外国人、外国组织在中国从事各种活动，也要遵守本法的规定，不得损害环境、破坏生态。</p><p>相关法条：《中华人民共和国环境保护法》第三条</p><p></p><p>（一）国家环境保护局关于《中华人民共和国环境保护法》第三十七条适用问题的复函</p><p>1996.05.13 公布 / 1996.05.13 施行</p><p>国家环境保护局关于《中华人民共和国环境保护法》第三十七条适用问题的复函</p><p>重庆市环境保护局：</p><p>你局《关于如何正确理解和执行 (中华人民共和国环境保护法) 第三十七条的请示》(重环发 [1996]170 号) 收悉，经研究函复如下：</p><p>《中华人民共和国环境保护法》第三十七条是关于违反污染防治设施环境管理要求行政处罚的规定。其中规定了两个适用条件，其一为排污单位 “未经环境保护行政主管部门同意，擅自拆除或者闲置防治污染的设施”；其二为 “污染物排放超过规定的排放标准”。环保部门在依据该条实施行政处罚时，应当两个条件同时具备。对擅自拆除或者闲置防治污染的设施，但排放污染物未经认定超标的排污单位，不能适用该条进行处罚。</p><p>国家环境保护局</p><p>1996 年 5 月 13 日</p><p></p><dl data-nslog-type="2" log-set-param="ext_reference">
+<dt>参考资料</dt>
+<dd>
+<ul>
+<li id="reference-[1]-38920-wrap">
+<span>1.</span>
+<a name="refIndex_1_38920" title="向上跳转" href="#ref_[1]_38920">&nbsp;&nbsp;</a>
+<a rel="nofollow" href="https://baike.baidu.com/reference/717646/55a1brqPsrLznHQAiGFlvQZuedZ29GoF5b_xgz0FyikLHQDRQGt8YVZDh7goh3BMPjqF4H-rmPYa24Uhs9kqTyWeO3LMomyNaDafFaBVsks-oSZX-Epz_jGtYS0s3TGnox00xcs6PW7pjX8" target="_blank">中华人民共和国环境保护法<span>&nbsp;</span></a>
+<span>．全国人大</span><span> [引用日期 2020-04-09]</span></li></ul>
+</dd>
+</dl><p></p></sr-rd-content>
+                            
                             <sr-rd-footer>
                                 <sr-rd-footer-group>
                                     <sr-rd-footer-line></sr-rd-footer-line>
@@ -281,7 +86,7 @@ hide task count
                                     <sr-rd-footer-line></sr-rd-footer-line>
                                 </sr-rd-footer-group>
                                 <sr-rd-footer-copywrite>
-                                    <div>本文由 <a href="http://ksria.com/simpread" target="_blank">简悦 SimpRead</a> 转码，用以提升阅读体验，<a href="https://github.com/Kenshin/simpread/discussions/3999" target="_blank">原文地址 </a></div>
+                                    <div>本文由 <a href="http://ksria.com/simpread" target="_blank">简悦 SimpRead</a> 转码，用以提升阅读体验，<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%8E%AF%E5%A2%83%E4%BF%9D%E6%8A%A4%E6%B3%95/717646?fr=aladdin" target="_blank">原文地址 </a></div>
                                 </sr-rd-footer-copywrite>
                             </sr-rd-footer>
                         </sr-read>
